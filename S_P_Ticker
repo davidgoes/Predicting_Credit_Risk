@@ -1,0 +1,9 @@
+import pandas as pd
+
+#S&P 500 ticker
+tickers = pd.read_excel('Set_path_to_file_in_repository.xlsx')
+
+#Create cashtags
+ticker_list = tickers['Ticker']
+cash_ticker = '$' + ticker_list
+cash_ticker = cash_ticker.astype(str)
